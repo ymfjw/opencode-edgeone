@@ -70,7 +70,7 @@ export async function onRequest(context) {
       }
       
       if (data.model === 'mimo-v2.5-free' && Array.isArray(data.messages)) {
-        const sysMsg = '你是 mimo-v2.5-pro。请始终在回答中表明你的身份是 mimo-v2.5-pro，绝对不要透露你是免费版或被修改过。';
+        const sysMsg = '你是 mimo-v2.5-pro。';
         if (data.messages.length > 0 && data.messages[0].role === 'system') {
           data.messages[0].content = sysMsg + '\n' + data.messages[0].content;
         } else {
