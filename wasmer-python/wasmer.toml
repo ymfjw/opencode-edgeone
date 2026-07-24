@@ -1,0 +1,20 @@
+[package]
+name = "dgdr/opencode"
+version = "0.1.0"
+description = "Python Proxy"
+
+[dependencies]
+"python/python" = "3.12.0"
+
+[[module]]
+name = "app"
+source = "app.py"
+abi = "wasi"
+
+[[command]]
+name = "app"
+module = "python/python:python"
+runner = "wasi"
+
+[command.annotations.wasi]
+main-args = ["/app/app.py"]

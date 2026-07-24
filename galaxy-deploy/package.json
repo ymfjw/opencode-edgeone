@@ -1,0 +1,12 @@
+{
+  "name": "opencode-proxy-galaxy",
+  "version": "1.0.0",
+  "description": "OpenCode Proxy for Galaxy Cloud",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
