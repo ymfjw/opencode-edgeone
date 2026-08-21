@@ -1,0 +1,9 @@
+{
+  "name": "opencode-wasmer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "wasmer.js",
+  "scripts": {
+    "start": "node wasmer.js"
+  }
+}\n
