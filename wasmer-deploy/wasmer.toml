@@ -1,5 +1,5 @@
 [package]
-name = "dgdr/opencode"
+name = "359forever/opencode"
 version = "0.1.0"
 description = "OpenCode Free Model Proxy on Wasmer Edge"
 
