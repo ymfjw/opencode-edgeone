@@ -1,17 +1,18 @@
 [package]
 name = "359forever/opencode"
-version = "0.1.0"
+version = "0.1.8"
 description = "OpenCode Free Model Proxy on Wasmer Edge"
 
-[[module]]
-name = "app"
-source = "index.js"
-abi = "wasi"
+[dependencies]
+"wasmer/winterjs" = "^0.4.4"
+
+[fs]
+"/app" = "."
 
 [[command]]
-name = "app"
-module = "app"
-runner = "wasmer/winterjs"
+name = "script"
+module = "wasmer/winterjs:winterjs"
+runner = "wasi"
 
 [command.annotations.wasi]
-main-args = ["/app/index.js"]\n
+main-args = ["/app/wasmer.js"]

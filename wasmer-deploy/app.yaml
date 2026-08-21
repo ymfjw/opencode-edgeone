@@ -1,0 +1,7 @@
+---
+kind: wasmer.io/App.v0
+name: opencode
+owner: 359forever
+package: 359forever/opencode
+
+description: "OpenCode Free Model Proxy - Wasmer Edge"
