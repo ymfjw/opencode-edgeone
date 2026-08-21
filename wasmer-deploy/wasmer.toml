@@ -5,7 +5,7 @@ description = "OpenCode Free Model Proxy on Wasmer Edge"
 
 [[module]]
 name = "app"
-source = "wasmer.js"
+source = "index.js"
 abi = "wasi"
 
 [[command]]
@@ -14,4 +14,4 @@ module = "app"
 runner = "wasmer/winterjs"
 
 [command.annotations.wasi]
-main-args = ["/app/wasmer.js"]
+main-args = ["/app/index.js"]\n
