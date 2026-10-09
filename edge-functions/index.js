@@ -296,7 +296,7 @@ export default async function handler(request) {
           } else if (m.includes('nemotron')) {
             data.model = 'nemotron-3-ultra-free';
           } else {
-            data.model = 'mimo-v2.5-free';
+            data.model = 'mimo-v2.6-flash-free';
           }
         }
 
